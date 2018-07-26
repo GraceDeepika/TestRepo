@@ -108,7 +108,7 @@ public class CreateJobViewDisplay implements CreateJobViewPresenter.Display {
         panel.add(rebootBefore, "create_reboot_before");
         panel.add(rebootAfter, "create_reboot_after");
         panel.add(parseFailedRepair, "create_parse_failed_repair");
-        panel.add(hostless, "create_hostless");
+        //panel.add(hostless, "create_hostless");
         panel.add(reserveHosts, "reserve_hosts");
         panel.add(testSelector, "create_tests");
         panel.add(profilerControls, "create_profilers");
