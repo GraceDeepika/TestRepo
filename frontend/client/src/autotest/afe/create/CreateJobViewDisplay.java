@@ -99,7 +99,7 @@ public class CreateJobViewDisplay implements CreateJobViewPresenter.Display {
 
         panel.add(jobName, "create_job_name");
         panel.add(kernel, "create_kernel");
-        panel.add(kernel_cmdline, "create_kernel_cmdline");
+        //panel.add(kernel_cmdline, "create_kernel_cmdline");
         panel.add(timeout, "create_timeout");
         panel.add(maxRuntime, "create_max_runtime");
         panel.add(emailList, "create_email_list");
@@ -109,7 +109,7 @@ public class CreateJobViewDisplay implements CreateJobViewPresenter.Display {
         panel.add(rebootAfter, "create_reboot_after");
         panel.add(parseFailedRepair, "create_parse_failed_repair");
         //panel.add(hostless, "create_hostless");
-        //panel.add(reserveHosts, "reserve_hosts");
+        panel.add(reserveHosts, "reserve_hosts");
         panel.add(testSelector, "create_tests");
         panel.add(profilerControls, "create_profilers");
         panel.add(controlFilePanel, "create_edit_control");
