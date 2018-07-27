@@ -97,8 +97,8 @@ public class CreateJobViewDisplay implements CreateJobViewPresenter.Display {
         controlFilePanel.setHeader(controlHeaderPanel);
         controlFilePanel.add(controlEditPanel);
 
-        panel.add(jobName, "create_job_name");
-        panel.add(kernel, "create_kernel");
+        //panel.add(jobName, "create_job_name");
+        //panel.add(kernel, "create_kernel");
         panel.add(kernel_cmdline, "create_kernel_cmdline");
         panel.add(timeout, "create_timeout");
         panel.add(maxRuntime, "create_max_runtime");

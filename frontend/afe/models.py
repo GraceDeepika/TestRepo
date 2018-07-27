@@ -899,7 +899,9 @@ class Kernel(dbmodels.Model):
         """
         if not kernel_list:
             return None
-        return [cls._create(kernel) for kernel in kernel_list]
+        
+        #return [cls._create(kernel) for kernel in kernel_list]
+        return None
 
     @classmethod
     def _create(cls, kernel_dict):
