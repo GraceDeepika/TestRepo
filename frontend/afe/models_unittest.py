@@ -216,25 +216,24 @@ class KernelTest(unittest.TestCase, test_utils.FrontendTestMixin):
         self.assertEqual(None, models.Kernel.create_kernels(None))
 
     def test_create_kernels(self):
-        pass
-#         self.god.stub_function(models.Kernel, '_create')
-#  
-#         num_kernels = 3
-#         kernel_list = [object() for _ in range(num_kernels)]
-#         result = [object() for _ in range(num_kernels)]
-#  
-#         for kernel, response in zip(kernel_list, result):
-#             models.Kernel._create.expect_call(kernel).and_return(response)
-#         self.assertEqual(result, models.Kernel.create_kernels(kernel_list))
-#         self.god.check_playback()
+    
+        self.god.stub_function(models.Kernel, '_create')
+  
+        num_kernels = 3
+        kernel_list = [object() for _ in range(num_kernels)]
+        result = [object() for _ in range(num_kernels)]
+  
+        for kernel, response in zip(kernel_list, result):
+            models.Kernel._create.expect_call(kernel).and_return(response)
+        self.assertEqual(result, models.Kernel.create_kernels(kernel_list))
+        self.god.check_playback()
 
     def test_create(self):
-#         kernel = models.Kernel._create({'version': 'version'})
-#         self.assertEqual(kernel.version, 'version')
-#         self.assertEqual(kernel.cmdline, '')
-#         self.assertEqual(kernel, models.Kernel._create({'version': 'version'}))
-        pass
-
+        kernel = models.Kernel._create({'version': 'version'})
+        self.assertEqual(kernel.version, 'version')
+        self.assertEqual(kernel.cmdline, '')
+        self.assertEqual(kernel, models.Kernel._create({'version': 'version'}))
+        
 
 class ParameterizedJobTest(unittest.TestCase,
                            test_utils.FrontendTestMixin):
