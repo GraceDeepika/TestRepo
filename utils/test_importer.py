@@ -58,6 +58,8 @@ DEPENDENCIES_NOT_FOUND = set()
 
 
 def update_all(autotest_dir, add_noncompliant, add_experimental):
+    
+    logging.debug("Function to scall through all the tests and add them to the database")
     """
     Function to scan through all tests and add them to the database.
 
@@ -75,7 +77,7 @@ def update_all(autotest_dir, add_noncompliant, add_experimental):
     :param add_experimental: add tests with experimental attribute set.
     """
     for path in ['server/tests', 'server/site_tests', 'client/tests',
-                 'client/site_tests', 'client/samples']:
+                 'client/site_tests', 'client/samples', 'hardware/tests']:
         test_path = os.path.join(autotest_dir, path)
         if not os.path.exists(test_path):
             continue

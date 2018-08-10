@@ -70,6 +70,7 @@ public class TestSelector extends Composite implements DataTableListener, Change
     // control file types
     public static final String SERVER_TYPE = "Server";
     public static final String CLIENT_TYPE = "Client";
+    public static final String HARDWARE_TYPE = "Hardware";
 
     public static interface TestSelectorListener {
         /**
@@ -149,6 +150,7 @@ public class TestSelector extends Composite implements DataTableListener, Change
 
         display.getTestTypeSelect().addItem(CLIENT_TYPE, CLIENT_TYPE);
         display.getTestTypeSelect().addItem(SERVER_TYPE, SERVER_TYPE);
+        display.getTestTypeSelect().addItem(HARDWARE_TYPE, HARDWARE_TYPE);
         display.getTestTypeSelect().addChangeHandler(this);
 
         display.getTestTable().setWidgetFactory(this);

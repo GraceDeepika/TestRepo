@@ -11,7 +11,7 @@ RebootAfter = enum.Enum('Never', 'If all tests passed', 'Always')
 
 
 # common enums for test attributes
-TestTypes = enum.Enum('Client', 'Server', start_value=1)
+TestTypes = enum.Enum('Client', 'Server', 'Hardware', start_value=1)
 
 
 # common enums for profiler and job parameter types
