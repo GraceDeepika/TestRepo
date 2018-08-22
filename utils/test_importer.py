@@ -279,7 +279,8 @@ def _set_attributes_clean(test, data):
     :param data: object with test data from the file system.
     """
     test_type = {'client': 1,
-                 'server': 2}
+                 'server': 2,
+                 'hardware':3}
 
     test_time = {'short': 1,
                  'medium': 2,
